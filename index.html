@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- favicon -->
+  <link rel="shortcut icon" href="/img/flavions.png" type="">
+
+  <!-- css -->
+  <link rel="stylesheet" type="text/css" href="/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+
+  <title>Metas</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="conteudo">
+      <div id="desaparecer" class="desativa"></div>
+      <div id="formulario" class="desativa">
+
+        <h1 id="titulo-formulario">Criar meta</h1>
+
+     
+        <input type="text" name="grupo-meta" id="grupo-meta" placeholder="Grupo">
+        <input type="text" name="nome-meta" id="nome-meta" placeholder="Nome">
+        <input type="number" min="1" max="7" name="qtd-item" id="qtd-item" placeholder="Quantidade de caixa">
+        <input type="text" name="apelido" id="apelido" placeholder="Apelido">
+        <div class="branco"></div>
+        
+            <input type="submit" name="add-submetas" id="add-submetas" value="+">
+        
+
+        <input type="button" value="Adicionar" class="btn-cadastrar" id="btn-cadastrar">
+        <input type="button" value="Cancelar" class="btn-cancelar" id="btn-cancelar" onclick="modalformulario()">
+      </div>
+      <div class="iniciar">
+        <input type="submit" id="btn-iniciar" class="desativa" value="Iniciar" onclick="modalformulario()">
+      </div>
+
+      <!-- meta -->
+      <div class="metas">
+        <div' class="meta-conteudo">
+          <div class="titulo-grupo">
+            <h1>Nome do Grupo</h1>
+          </div>
+          <div class="titulo-nome">
+            <h1>Nome</h1>
+          </div>
+          <div class="caixa-content">
+            <div class="apelido-meta">
+              <p class="elemento-apelido">Apelido</p>
+              <div class="caixas">
+                <div class="caixa"></div>
+                <div class="caixa"></div>
+                <div class="caixa"></div>
+                <div class="caixa"></div>
+              </div>
+            </div>
+
+            <div class="apelido-meta">
+              <p class="elemento-apelido">Apelido</p>
+              <div class="caixas">
+                <div class="caixa"></div>
+                <div class="caixa"></div>
+                <div class="caixa"></div>
+                <div class="caixa"></div>
+                <div class="caixa"></div>
+                <div class="caixa"></div>
+                <div class="caixa"></div>
+              </div>
+            </div>
+            <div class="apelido-meta">
+              <p>Apelido</p>
+              <div class="caixas">
+                <div class="caixa"></div>
+                <div class="caixa"></div>
+                <div class="caixa"></div>
+                <div class="caixa"></div>
+                <div class="caixa"></div>
+                <div class="caixa"></div>
+                <div class="caixa"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+       
+      </div>
+    </div>
+  </div>
+  <script src="/js/script.js" defer></script>
+</body>
+
+</html>

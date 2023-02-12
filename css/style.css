@@ -1,0 +1,271 @@
+/* container */
+.container {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    font-family:Verdana, Tahoma, sans-serif
+}
+
+
+.desativar {
+    visibility: hidden;
+
+}
+
+/* conteudo */
+.conteudo {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+
+/* desaparecer */
+#desaparecer {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    opacity: .5;
+}
+
+/* formulario */
+#formulario {
+  
+    position: absolute;
+    height: 80vh;
+    width: 50vw;
+    padding: 5%;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.981);
+    margin-top: 5%;
+    margin-left: 50%;
+    transform: translate(-50%);
+    display: grid;
+    gap: 10px;
+    text-align: center;
+    grid-template-areas:
+        "titulo titulo titulo titulo"
+        "grupo grupo grupo grupo"
+        "nome nome nome nome"
+        "qtd-item apelido apelido apelido"
+        "branco branco branco mais"
+        "cadastrar cadastrar cancelar cancelar"
+    ;
+    box-sizing: border-box;
+}
+
+
+#titulo-formulario {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    grid-area: titulo;
+    font-weight: bold;
+}
+
+#grupo-meta {
+    grid-area: grupo;
+}
+
+#nome-meta {
+    grid-area: nome;
+}
+
+#qtd-item {
+    grid-area: qtd-item;
+}
+
+#apelido {
+    grid-area: apelido;
+}
+
+#btn-cadastrar {
+    grid-area: cadastrar;
+}
+
+.add-submetas{
+    height: 40px;
+    width: 40px;
+}
+
+.branco{
+   grid-area: branco;
+   height: 30px;
+   width: 300px;
+}
+#add-submetas{ 
+    grid-area: mais;
+}
+
+
+#add-submetas{
+    height: 40px;
+    width: 40px;
+    background-color: green;
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+    border:1px solid transparent;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+#add-submetas:hover{
+    transition: .9s;
+    background-color:rgb(1, 73, 1);
+    box-shadow: rgba(0, 129, 13, 0.35) 0px 0px 15px;
+}
+
+
+
+#btn-iniciar {
+    border: 1px solid transparent;
+    border-radius: 3px;
+    background-color: green;
+    color: white;
+    font-size: 18px;
+    height: 30px;
+    width: 100px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+#btn-iniciar:hover {
+    background-color: rgb(1, 73, 1);
+}
+
+
+#btn-cancelar {
+    grid-area: cancelar;
+}
+
+#id-meta,
+#grupo-meta,
+#nome-meta,
+#qtd-item,
+#apelido {
+    height: 40px;
+    margin-bottom: -40px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    box-sizing: border-box;
+}
+
+.btn-cadastrar,
+.btn-cancelar {
+    border-radius: 10px;
+    border: 1px solid transparent;
+    height: 40px;
+    color: aliceblue;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.btn-cadastrar {
+    background-color: green;
+}
+
+
+.btn-cadastrar:hover {
+    background-color: rgb(1, 93, 1);
+    color: white;
+}
+
+.btn-cancelar {
+    background-color: brown;
+}
+
+.btn-cancelar:hover {
+    background-color: rgb(123, 37, 37);
+    color: white;
+}
+
+/* metas*/
+ 
+.metas{
+    margin-top: 40px;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+}
+
+.meta-conteudo{
+    padding: 5px;
+    display:flex ;
+    flex-direction: column;
+ justify-content: space-between;
+    border: 1px solid gray;
+    width: 45%;
+    margin: 1%;
+    border-radius: 5px;
+
+}
+
+.titulo-grupo{
+   height: 30px;
+   width: 104%;
+   margin-top: 15px;
+   margin-left: -2%;
+   border: 2px solid blue;
+   border-radius: 5px;
+   color: blue;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color:white;  
+   font-size: 20px;
+}
+
+
+.titulo-nome{
+    margin-top: 2%;
+    margin-bottom: 4%;
+    color: gray;
+    font-size: 25px;
+}
+
+.apelido-meta{
+    width: auto;
+    border: 1px solid grey;
+    padding:2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1%;
+}
+
+.apelido-meta p{
+    margin: 1% auto 10px auto;
+    font-size: 19px;
+}
+
+.caixa-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: auto;
+}
+
+.caixas{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.caixa{
+    height: 15px;
+    width: 15px;
+    border: 1px solid grey;
+    border-radius: 2px;
+    background-color:white;
+    
+
+}
