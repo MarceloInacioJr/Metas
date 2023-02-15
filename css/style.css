@@ -34,7 +34,6 @@
 
 /* formulario */
 #formulario {
-  
     position: absolute;
     height: 80vh;
     width: 50vw;
@@ -44,66 +43,63 @@
     margin-top: 5%;
     margin-left: 50%;
     transform: translate(-50%);
-    display: grid;
-    gap: 10px;
-    text-align: center;
-    grid-template-areas:
-        "titulo titulo titulo titulo"
-        "grupo grupo grupo grupo"
-        "nome nome nome nome"
-        "qtd-item apelido apelido apelido"
-        "branco branco branco mais"
-        "cadastrar cadastrar cancelar cancelar"
-    ;
     box-sizing: border-box;
 }
 
 
-#titulo-formulario {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
-    grid-area: titulo;
-    font-weight: bold;
+.form-principal{
+    display:flex;
+    flex-wrap: wrap;
+    gap:2%;
 }
 
-#grupo-meta {
-    grid-area: grupo;
-}
-
-#nome-meta {
-    grid-area: nome;
-}
-
-#qtd-item {
-    grid-area: qtd-item;
+#qtd-item{
+    width: 38%;
 }
 
 #apelido {
-    grid-area: apelido;
+    width:60%;
 }
 
-#btn-cadastrar {
-    grid-area: cadastrar;
+#grupo-meta{
+    width: 30%;
 }
 
-.add-submetas{
+#nome-meta{
+    width: 68%;
+}
+
+#titulo-formulario {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    margin-bottom: 30px;
+    grid-area: titulo;
+    font-weight: bold;
+}
+.add-tarefa{
     height: 40px;
     width: 40px;
 }
 
-.branco{
-   grid-area: branco;
-   height: 30px;
-   width: 300px;
-}
-#add-submetas{ 
-    grid-area: mais;
+.form-add-tarefa{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap:2%;
+
 }
 
+#linha{
+  height: 1px;
+  width: 100%;
+  border-bottom:1px solid grey;
+  margin-bottom: 20px;
+}
 
-#add-submetas{
+#add-tarefa{
+    margin-top: 10px;
     height: 40px;
-    width: 40px;
+    width: 40px; 
     background-color: green;
     color: white;
     font-weight: bolder;
@@ -113,12 +109,20 @@
     cursor: pointer;
 }
 
-#add-submetas:hover{
+#add-tarefa:hover{
     transition: .9s;
     background-color:rgb(1, 73, 1);
     box-shadow: rgba(0, 129, 13, 0.35) 0px 0px 15px;
 }
 
+.btn-add-tarefa{
+    margin-bottom: 20px;
+    
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
 
 
 #btn-iniciar {
@@ -148,7 +152,7 @@
 #qtd-item,
 #apelido {
     height: 40px;
-    margin-bottom: -40px;
+    margin-bottom: 10px;
     padding: 5px;
     border-radius: 5px;
     border: 1px solid gray;
